@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCVS - View Results</title>
+    <link rel="stylesheet" href="results.css">
+</head>
+<body>
+    <div class="container">
+        <header id="top">
+            <div id="leftPlace"><h1>Online College Voting System</h1></div>
+            <div id="rightPlace">
+                <img id="dpAdmin" src="images/adminImage.jpeg" alt="adminphoto">
+                <h1>Admin</h1>
+            </div>
+        </header>
+        
+        <aside class="navOuter">
+                <div>
+                    <div>
+                        <p class="sidehead">REPORTS</p>
+                        <div class="selected"><img class="icon" src="images/dashboard.png" alt="pic"><a href="adminLogin.html">Dashboard</a></div>
+                    </div>
+        
+                    <div>
+                        <p class="sidehead">MANAGE</p>
+                        <div class="selected"><img class="icon" src="images/election.jpeg" alt="pic"><a href="election.html">Election</a></div>
+                        <div class="selected"><img class="icon" src="images/candidate.png" alt="pic"><a href="candidate.html">Candidates</a></div>
+                        <div class="selected"><img class="icon" src="images/voters.png" alt="pic"><a href="voter.html">Voters</a></div>   
+                    </div>
+        
+                    <div>
+                        <p class="sidehead">VIEW</p>
+                        <div id="here" class="selected"><img class="icon" src="images/results.jpeg" alt="pic"><a href="results.html">Result</a></div>
+                    </div>
+        
+                    <div>
+                        <p class="sidehead">LOGOUT</p>
+                        <div class="selected"><img class="icon" src="images/logout.png" alt="pic"><a href="index.html">Logout</a></div>
+                    </div>
+                </div>
+        </aside>
+        <section id="content">
+            <h2>View Results</h2>
+            <div id="votingResults"></div>
+            <table>
+                <thead>
+                    <th>Election Title</th>
+                    <th>Position</th>
+                    <th>Candidate Name</th>
+                    <th>Votes</th>
+                    <th>Publish Result</th>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+</body>
+<script type="module" src="viewResults.js"></script>
+</html>

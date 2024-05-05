@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCVS - Manage Election</title>
+    <link rel="stylesheet" href="election.css">
+</head>
+<body>
+    <div class="container">
+        <header id="top">
+            <div id="leftPlace"><h1>Online College Voting System</h1></div>
+            <div id="rightPlace">
+                <img id="dpAdmin" src="images/adminImage.jpeg" alt="adminphoto">
+                <h1>Admin</h1>
+            </div>
+        </header>
+        
+        <aside class="navOuter">
+                <div>
+                    <div>
+                        <p class="sidehead">REPORTS</p>
+                        <div class="selected"><img class="icon" src="images/dashboard.png" alt="pic"><a href="adminLogin.html">Dashboard</a></div>
+                    </div>
+        
+                    <div>
+                        <p class="sidehead">MANAGE</p>
+                        <div id="here" class="selected"><img class="icon" src="images/election.jpeg" alt="pic"><a href="election.html">Election</a></div>
+                        <div class="selected"><img class="icon" src="images/candidate.png" alt="pic"><a href="candidate.html">Candidates</a></div>
+                        <div class="selected"><img class="icon" src="images/voters.png" alt="pic"><a href="voter.html">Voters</a></div>   
+                    </div>
+        
+                    <div>
+                        <p class="sidehead">VIEW</p>
+                        <div class="selected"><img class="icon" src="images/results.jpeg" alt="pic"><a href="results.html">Result</a></div>
+                    </div>
+        
+                    <div>
+                        <p class="sidehead">LOGOUT</p>
+                        <div class="selected"><img class="icon" src="images/logout.png" alt="pic"><a href="index.html">Logout</a></div>
+                    </div>
+                </div>
+        </aside>
+        <section id="content">
+            <h2>Manage Election</h2>
+            <button id="newElection">➕  New</button>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Election Title</th>
+                        <th>Position</th>
+                        <th>Starting Date</th>
+                        <th>Starting Time</th>
+                        <th>Ending Time</th>
+                        <th>Deletion</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+
+            <div id="addElection">
+                <a href="#" id="close">❌</a>
+                <h2 id="addNewElection">Add New Election</h2>
+                <hr>
+                <form>
+                    <label for="title">Election Title:</label>
+                    <input type="text" id="title"><br><br>
+                    <label for="positionList" id="position">Position: </label>
+                    <select name="choice" id="positionList">
+                        <option value="President">President</option>
+                        <option value="Vice-President">Vice-President</option>
+                        <option value="Secretary">Secretary</option>
+                        <option value="Joint-Secretary">Joint-Secretary</option>
+                        <option value="DUSU Central Council">DUSU Central Council</option>
+                    </select><br><br>
+                    <label for="sdate">Select Starting Date :</label>
+                    <input type="date" name="sdate" id="sdate"><br><br>
+                    <label for="stime">Select Starting Time :</label>
+                    <input type="time" name="stime" id="stime"><br><br>
+                    <label for="etime">Select Ending Time :</label>
+                    <input type="time" name="etime" id="etime">
+                </form>
+                <button id="create_button">Create Election</button>
+            </div>
+        </section>
+    </div>
+</body>
+<script type="module" src="addElection.js"></script>
+</html>

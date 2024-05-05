@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCVS - Manage Candidates</title>
+    <link rel="stylesheet" href="candidate.css">
+</head>
+<body>
+    <div class="container">
+        <header id="top">
+            <div id="leftPlace"><h1>Online College Voting System</h1></div>
+            <div id="rightPlace">
+                <img id="dpAdmin" src="images/adminImage.jpeg" alt="adminphoto">
+                <h1>Admin</h1>
+            </div>
+        </header>
+        
+        <aside class="navOuter">
+                <div>
+                    <div>
+                        <p class="sidehead">REPORTS</p>
+                        <div class="selected"><img class="icon" src="images/dashboard.png" alt="pic"><a href="adminLogin.html">Dashboard</a></div>
+                    </div>
+        
+                    <div>
+                        <p class="sidehead">MANAGE</p>
+                        <div class="selected"><img class="icon" src="images/election.jpeg" alt="pic"><a href="election.html">Election</a></div>
+                        <div id="here" class="selected"><img class="icon" src="images/candidate.png" alt="pic"><a href="candidate.html">Candidates</a></div>
+                        <div class="selected"><img class="icon" src="images/voters.png" alt="pic"><a href="voter.html">Voters</a></div>   
+                    </div>
+        
+                    <div>
+                        <p class="sidehead">VIEW</p>
+                        <div class="selected"><img class="icon" src="images/results.jpeg" alt="pic"><a href="results.html">Result</a></div>
+                    </div>
+        
+                    <div>
+                        <p class="sidehead">LOGOUT</p>
+                        <div class="selected"><img class="icon" src="images/logout.png" alt="pic"><a href="index.html">Logout</a></div>
+                    </div>
+                </div>
+        </aside>
+        <section id="content">
+            <h2>Candidates List</h2>
+            <button id="newCandidate">➕  New</button>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Position</th>
+                        <th>Candidate Name</th>
+                        <th>Course</th>
+                        <th>Year</th>
+                        <th>Roll No.</th>
+                        <th>Deletion</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <div id="addCandidate">
+                <a href="#" id="close">❌</a>
+                <h2 id="addNewCandidate">Add New Candidate</h2>
+                <hr>
+                <form>
+                    <label for="cName">Name :</label>
+                    <input type="text" id="cName"><br><br>
+                    <label for="cCourse">Course: </label>
+                    <select name="course" id="cCourse">
+                        <option value="B.A.">B.A.</option>
+                        <option value="B.Sc.">B.Sc.</option>
+                        <option value="B.Com.">B.Com.</option>
+                    </select>
+                    <br><br>
+                    <label for="cYear">Year: </label>
+                    <select name="year" id="cYear">
+                        <option value="first">I</option>
+                        <option value="second">II</option>
+                        <option value="third">III</option>
+                        <option value="fourth">IV</option>
+                    </select>
+                    <br><br>
+                    <label for="cRoll">Roll No. :</label>
+                    <input type="number" id="cRoll"><br><br>
+                    <label for="cPosition">Position: </label>
+                    <select name="choice" id="cPosition">
+                        <option value="President">President</option>
+                        <option value="Vice-President">Vice-President</option>
+                        <option value="Secretary">Secretary</option>
+                        <option value="Joint-Secretary">Joint-Secretary</option>
+                        <option value="DUSU Central Council">DUSU Central Council</option>
+                    </select><br><br>
+                </form>
+                <button id="create_button">Register</button>
+            </div>
+        </section>
+    </div>
+</body>
+<script type="module" src="addCandidate.js"></script>
+</html>

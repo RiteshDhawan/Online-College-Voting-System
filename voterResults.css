@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {  
+    font-family: Arial, sans-serif;  
+    background-color: #f2f2f2;
+    width: 100vw;
+    height: 100vh;
+    /* overflow: hidden; */
+}
+.navOuter {
+    /* margin-top: px; */
+    display: grid;
+    /* justify-content: center; */
+    /* flex-wrap: wrap; */
+    max-width: 100%;
+    max-height: 100%;
+    background-color: rgba(80, 78, 78, 0.855);
+    padding: 15px;
+    padding-bottom: 65px;
+    padding-right: 0;
+}
+
+#top{
+    color: white;
+    background-color: rgb(154, 147, 147);
+    width: 100vw;
+    font-weight: 200;
+    padding: 16px;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+#dpAdmin{
+    border-radius: 50%;
+    width: 30px;
+    height: auto;
+}
+#rightPlace{
+    gap: 10px;
+    padding-right: 30px;
+    display: flex;
+}
+.icon{
+    border-radius: 50%;
+    width: 25px;
+    height: auto;
+}
+.selected{
+    color: white;
+    display: flex;
+    padding: 1rem;
+    gap: 0.7rem;
+}
+.selected a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 50;
+}
+.selected:hover{
+    background-color: rgb(39, 36, 36);
+}
+.sidehead{
+    background-color: rgb(39, 36, 36);
+    color: white;
+    font-size: 20px;
+    font-weight: 50;
+}
+
+section{
+    width: 75vw;
+    padding: 1rem;
+    /* background-color: lightgreen; */
+    /* position: relative; */
+    /* left: 21.4rem; */
+    /* bottom: 32rem; */
+}
+#top{
+    grid-area: header;
+}
+.navOuter{
+
+    grid-area: sidebar;
+}
+#content{
+    grid-area: maincontent;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas: "header header"
+                         "sidebar maincontent"
+    ;
+}
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+th, td {
+	border: 1px solid black;
+	padding: 8px;
+	text-align: left;
+}
+th {
+	background-color: #e4dddd;
+}
+h2{
+    margin: 1rem auto;
+}
+#here{
+    background-color: rgb(44, 40, 40);
+}

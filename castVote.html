@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCVS - Voters Dashboard</title>
+    <link rel="stylesheet" href="electionDetails.css">
+</head>
+<body>
+    <div class="container">
+        <header id="top">
+            <div id="leftPlace"><h1>Online College Voting System</h1></div>
+            <div id="rightPlace">
+                <img id="dpAdmin" src="images/adminImage.jpeg" alt="adminphoto">
+                <h1>Admin</h1>
+            </div>
+        </header>
+        
+        <aside class="navOuter">
+                <div>
+                    <div>
+                        <p class="sidehead">REPORTS</p>
+                        <div class="selected"><img class="icon" src="images/dashboard.png" alt="pic"><a href="voterLogin.html">Dashboard</a></div>
+                    </div>
+        
+                    <div>
+                        <p class="sidehead">VIEW</p>
+                        <div class="selected"><img class="icon" src="images/election.jpeg" alt="pic"><a href="electionDetails.html">Election Details</a></div>
+                        <div class="selected"><img class="icon" src="images/results.jpeg" alt="pic"><a href="voterResults.html">Result</a></div>
+                    </div>
+        
+                    <div>            
+                        <p class="sidehead">Cast</p>
+                        <div id="here" class="selected"><img class="icon" src="images/voters.png" alt="pic"><a href="castVote.html">Cast Vote</a></div>   
+                    </div>
+
+                    <div>
+                        <p class="sidehead">LOGOUT</p>
+                        <div class="selected"><img class="icon" src="images/logout.png" alt="pic"><a href="index.html">Logout</a></div>
+                    </div>
+                </div>
+        </aside>
+        <section id="content">
+                <h2>Cast Vote</h2>            
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Election Title</th>
+                            <th>Position</th>
+                            <th>Candidate Name</th>
+                            <th>Course</th>
+                            <th>Year</th>
+                            <th>Vote</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+        </section>
+    </div>
+</body>
+<script type="module" src="electionDetails.js"></script>
+</html>

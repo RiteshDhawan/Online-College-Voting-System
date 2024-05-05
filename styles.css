@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {    
+    background-color: #f2f2f2;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.navOuter {
+    /* margin-top: px; */
+    display: grid;
+    /* justify-content: center; */
+    /* flex-wrap: wrap; */
+    max-width: 100%;
+    max-height: 100%;
+    background-color: rgba(80, 78, 78, 0.855);
+    padding: 15px;
+    padding-bottom: 65px;
+    padding-right: 0;
+}
+
+#top{
+    color: white;
+    background-color: rgb(154, 147, 147);
+    width: 100vw;
+    font-weight: 200;
+    padding: 16px;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+#dpAdmin{
+    border-radius: 50%;
+    width: 30px;
+    height: auto;
+}
+#rightPlace{
+    gap: 10px;
+    padding-right: 30px;
+    display: flex;
+}
+.icon{
+    border-radius: 50%;
+    width: 25px;
+    height: auto;
+}
+.selected{
+    color: white;
+    display: flex;
+    padding: 1rem;
+    gap: 0.7rem;
+}
+.selected a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 50;
+}
+.selected:hover{
+    background-color: rgb(39, 36, 36);
+}
+.sidehead{
+    background-color: rgb(39, 36, 36);
+    color: white;
+    font-size: 20px;
+    font-weight: 50;
+}
+aside{
+    /* position: relative; */
+    /* top: 0.01rem; */
+    /* left: ; */
+}
+section{
+    width: 75vw;
+    padding: 1rem;
+    /* background-color: lightgreen; */
+    /* position: relative; */
+    /* left: 21.4rem; */
+    /* bottom: 32rem; */
+}
+#maingrid{
+    padding: 2rem;
+    display: grid;
+    gap: 2.5rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+#first{
+    background-color:#B0C4DE;
+    color: black;
+    width: 400px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* padding-bottom: 0; */
+}
+#agrid1{
+    font-size:1.8rem;
+    color: black;
+    width: 300px;
+    text-decoration: none;
+}
+#second{
+    background-color:#deb887;
+    color: black;
+    width: 400px;
+    height: 200px;
+    /* padding: 1rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 0;
+}
+#agrid2{
+    font-size:1.8rem;
+    color: black;
+    text-decoration: none;
+}
+#third{
+    background-color: #B59B91;
+    color: black;
+    width: 400px;
+    height: 200px;
+    /* padding: 1rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 0;
+}
+#agrid3{
+    font-size:1.8rem;
+    color: black;
+    text-decoration: none;
+}
+#fourth{
+    background-color: #778899;
+    color: black;
+    width: 400px;
+    height: 200px;
+    /* padding: 1rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 0;
+}
+#agrid4{
+    font-size:1.8rem;
+    color: black;
+    text-decoration: none;
+}
+.num{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.num ~ p {
+    font-size: 2rem;
+    padding-top: 20px;
+}
+div:has(> #agrid1){
+    background-color:#4682B4;
+    text-align: center;
+    margin-left: 0;
+}
+div:has(> #agrid2){
+    background-color: #8b4513;
+    text-align: center;
+    margin-left: 0;
+}
+div:has(> #agrid3){
+    background-color: #96837E;
+    text-align: center;
+    margin-left: 0;
+}
+div:has(> #agrid4){
+    background-color: #2F4F4F;
+    text-align: center;
+    margin-left: 0;
+}
+div:has(> .num){
+    padding: 1rem;
+}
+
+#top{
+    grid-area: header;
+}
+.navOuter{
+
+    grid-area: sidebar;
+}
+#content{
+    grid-area: maincontent;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas: "header header"
+                         "sidebar maincontent"
+    ;
+}
+/* For voterLogin */
+#voterName{
+    margin: 1rem;
+}
+#here{
+    background-color: rgb(44, 40, 40);
+}
+/* 
+For smaller screens
+@media only screen and (max-width: 768px) {
+    .navOuter {
+        max-width: 100%; 
+    }
+    section {
+        width: 100%;
+        padding: 1rem;
+        position: static;
+        left: auto;
+        bottom: auto;
+    }
+    #maingrid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+For larger screens
+@media only screen and (min-width: 768px) {
+    section {
+        width: calc(100% - 25vw); 
+        position: relative;
+        left: 21.4rem; 
+        bottom: 32rem; 
+    }
+} */
